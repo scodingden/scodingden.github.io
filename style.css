@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background-color: #ffc30f;
+}
+
+
+.home{
+    background-color: #001d30;   
+}
+ h1{
+     color: #ffc30f;
+     font-size: 80px;
+     text-align: left;
+     padding-top: 50px;
+ }
+ .home p{
+     color: rgb(230, 188, 38);
+ }
