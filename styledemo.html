@@ -5,23 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <h1>Title</h1>
-    <p>No one is going to see this page.Go to google.com by clicking here<a href=
-        Googlehttps://www.google.com">here</a></p>
-        <ul style="display: inline-block ;">
-            <li style="background-color: rgb(218, 137, 151);">one</li>
-            <li>two</li>
-            <li style="background-color: rgb(218, 137, 151);">three</li>
-            <li>four</li>
-        </ul>
-        <ul style="display: inline-block">
+    <style>
+        
+        body {
+            background-color: #fbb13c;
+        }
+        ul  {
+            display: inline-block;
+            color: rgb(248, 218, 236);
+        }
+        .even,.odd{
+            background-color: coral;
+        }
+        ul p{
+            color: rgb(233, 39, 39);
+        }
+       
 
+    </style>
+</head>
+<body >
+    <h1>Title</h1>
+    <p>No one is going to see this page.Go to google.com by clicking <a href=
+        Googlehttps://www.google.com">here</a></p>
+        <ul id="first" >
+            <p>first list</p>
             <li>one</li>
-            <li style="background-color: rgb(218, 137, 151);">two</li>
-            <li >three</li>
-            <li style="background-color: rgb(218, 137, 151);">four</li>
+            <li class="even">two</li>
+            <li>three</li>
+            <li class="even">four</li>
+            <li>five</li>
+            <li class="even">six</li>
+        </ul>
+        <ul id="second">
+            <p>second list</p>
+
+            <li class="odd">one</li>
+            <li>two</li>
+            <li class="odd">three</li>
+            <li >four</li>
+            <li class="odd">five</li>
+            <li >six</li>
 
         </ul>
     
