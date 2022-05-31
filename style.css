@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 header{
     display: flex;
@@ -27,13 +28,15 @@ button{
      color: #ffc30f;
      font-size: 80px;
      text-align: left;
+     font-family: 'Jua', sans-serif;
   
  }
  .home p{
      color: rgb(230, 188, 38);
      position: relative;
      padding-bottom: 175px;
-     font-family:'Rubik', sans-serif ;
+     font-family: 'Oswald', sans-serif;
+     font-size: large;
  }
  .home button{
     background-color:#ffc30f;
@@ -52,15 +55,26 @@ button{
      font-size: 35px;
      color: #001d30;
      text-align: center;
+     font-family: 'Jua', sans-serif;
  }
  .whoami span{
      color: #ffc30f;
+     font-family: 'Jua', sans-serif;
  }
  .whoami{
      padding: 100px 30px 100px 30px;
      background-color: #dbf6e9;
      margin: auto;
      text-align: center;
+ }
+ .whoami p,ul{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+ }
+ .whoami h3 {
+    color: #001d30;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
  }
  .row{
      display: flex;
@@ -90,9 +104,16 @@ button{
  }
  .contactme h1{
      padding-bottom: 50px;
+     font-family: 'Jua', sans-serif;
+ }
+ .contactme p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+
  }
  .contactme span{
     color: #ffc30f;
+    font-family: 'Jua', sans-serif;
  }
  .inputs form input,textarea{
      padding: 20px;
