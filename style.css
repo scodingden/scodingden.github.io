@@ -51,6 +51,11 @@ button{
      left: 125px;
      top: 200px;
  }
+ .trangle{
+     position: absolute;
+     right: 100px;
+     bottom: 0px;
+ }
  .whoami h1{
      font-size: 35px;
      color: #001d30;
@@ -125,3 +130,14 @@ button{
      display: inline-block;
 
  }
+ footer{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 2px 20px 2px 2px;
+    background-color: #ffc30f;
+}
+footer img{
+    width: 50px;
+}
+ 
