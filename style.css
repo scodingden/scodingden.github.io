@@ -56,6 +56,22 @@ button{
      right: 100px;
      bottom: 0px;
  }
+ @media screen and (max-width:780px) {
+   .home h1{
+       font-size: 40px;
+       
+   }
+   .home p{
+       display: flex;
+       font-size: 10px;
+       /* padding-bottom: 80px; */
+   }
+   .trangle{
+       right: 20px;
+       bottom: 2rem;
+   }
+     
+ }
  .whoami h1{
      font-size: 35px;
      color: #001d30;
@@ -98,6 +114,16 @@ button{
      height: 100px;
      margin-left: 20px;
      margin-left: 20px;
+ }
+ @media screen and (max-width:780px) {
+     .whoami, .row{
+         flex-direction: column;
+         margin: 5px;
+         
+     }
+     .cols{
+         margin: 5px;
+     }
  }
  .contactme{
      background-color: #dbf6e9;
