@@ -6,58 +6,64 @@
     <meta name="page description" content="My portfolio">
     <meta name="keyword" content="html,css,javascript">
     <meta name="author" content="Syed AzeemUddin">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jua&family=Oswald:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8df6629e6d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Syed AzeemUddin</title>
     <link rel="icon" href="img/favlogo.png" type="image">
 </head>
-<body>  
-    <header>
+<body class="p-0 m-0 box-border">  
+    <header class="flex justify-between items-center pt-2px pr-20px pb-2px pl-2px bg-yellow-500">
         <img src="img/logo.png" alt="logo" width="60" height="50" >
-        <button>Contact me</button>
+        <button class="bg-[#001d30] text-[#ffc30d] py-2 px-5  mr-3 rounded-full hover:bg-[#ffc30f] focus:outline-none hover:border-2 border-[#001d30] hover:text-[#001d30]">Contact me</button>
     </header>
         <!-- hero section -->
-        <section>
-            <div class="home">
-                <div class="dot">
-                <img src="img/homed.png">
+        <section class="flex bg-[#001d30] h-full pt-12.5 px-12.5 pb-3 ">
+           <div>
+            <input class="sr-only peer" type="radio" value="dark" name="mode" id="darkmode">
+            <label class="flex p-1 m-4 bg-yellow-50 border border-[#001d30] rounded-lg cursor-pointer focus:outline-none hover:bg-[#001d30] hover:text-[#dbf6e9] peer-checked:ring-green-500 peer-checked:ring-2 peer-checked:border-transparent " for="darkmode"><i class="fa fa-moon"></i></label>
+            <div class="absolute hidden w-5 h-5 peer-checked:block top-30 tight-3 pl-3 text-[#dbf6e9]">Dark</div>
+           </div>
+            <div class=" pl-20 md:pl-44 pt-44">
+                <div class="break-words absolute left-0 md:left-32 top-36">
+                <img src="img/homed.png" class="mr-4">
                 </div>
-            <h1>I'm Syed AzeemUddin!</h1>
-            <p>I'm a professional web developer with front-end development<br>skills based in react js.</p>
-            <button>Know more</button>
-            <div class="trangle">
+            <h1 class="text-[#ffc30d] text-4xl md:text-7xl text-left font-jua justify-center ">I'm Syed AzeemUddin!</h1>
+            <p class="text-[#ffc30d] relative pb-56 pt-5 font-Oswald text-md md:text-lg text-[#dbf6e9]">I'm a professional web developer with front-end development<br>skills based in react js.</p>
+            <button class="bg-[#ffc30f] rounded-2xl px-6 py-2 text-[#001d30] justify-end hover:bg-[#001d30] focus:outline-none hover:border-2 border-[#ffc30f] hover:text-[#ffc30f]">Know more</button>
+            <!-- <div class="absolute right-100px buttom-0">
                 <img src="img/herotd.png" alt="trangle">
-            </div>
+            </div> -->
             </div>
         </section>
         <!-- who i am section -->
-    <section class="whoami">
-            <h1>Who Am <span>I</span></h1>
-            <p>A little About <span>Me</span> And<span>My</span> Work</p>
+    <section class="bg-[#dbf6e9] m-auto text-center ">
+            <h1 class="text-4xl text-[#001d30] text-center font-jua">Who Am <span class="text-[#ffc30f] font-jua text-4xl">I</span></h1>
+            <p class="text-lg">A little About <span class="text-[#ffc30f] font-jua text-lg">Me</span> And<span class="text-[#ffc30f] font-jua text-lg">My</span> Work</p>
         
-    <div class="row">
-        <div class="cols">
+    <div class="flex justify-between mt-2 flex-col md:flex-row">
+        <div class="bg-[#fff48f] rounded-xl py-5 px-2.5 m-5 relative overflow-hidden basis-1/2">
             <h3> <span>My</span> Education</h3>
-            <img src="img/graduation-cap-free-icon-font.png">
+            <img  class="  h-24 m-auto items-center"src="img/graduation-cap-free-icon-font.png">
             <p> B.Tech Final Year in Computer Science.At</p>
             <p><i class="fa fa-school"></i> Lords Institute of enghineering and technology</p>
             <p><i class="fa fa-code"></i> Presently UpSkilling At HashInsert</p>
         </div>
-        <div class="cols">
+        <div class="bg-[#fff48f] rounded-xl py-5 px-2.5 m-5 relative overflow-hidden basis-1/2">
             <h3> <span>My</span> Skills</h3>
-            <img src="img/web-development.png">
+            <img class="h-24 m-auto items-center" src="img/web-development.png">
             <ul>
             <li><i class="fa fa-html5"></i> HTML</li>
             <li><i class="fa fa-css3"></i>CSS</li>
             <li><i class="fab fa-java" style="font-size: 24px;"></i>JAVA</li>
             </ul>
         </div>
-        <div class="cols">
+        <div class="bg-[#fff48f] rounded-xl py-5 px-2.5 m-5 relative overflow-hidden basis-1/2">
            <h3> <span>My</span> projects</h3>
-           <img src="img/management (1).png">
+           <img class="h-24 m-auto items-center"src="img/management (1).png">
            <ul>
                <li>Netflix clone</li>
            </ul>
@@ -66,23 +72,23 @@
      </section>
     <section>
         
-        <div class="contactme">
-            <h1>Let's Get In<span>Touch.</span></h1>
-            <p>Lets bring your <span>ideas</span> to life.</p>
-            <div class="inputs">
-            <form>
-                <input type="text" name="yourname" id="yname" placeholder="Your Name.">
-                <input type="email" name="youremail" id="yemail" placeholder="Your Email." required><br>
-                <textarea name="Your message" id="ymsg" placeholder="Your Message" cols="30" rows="5"></textarea><br>
-                <button>Submit</button>
+        <div class="bg-[#dbf6e9] p-24 h-auto  text-[#001d30] text-center">
+            <h1 class="pb-4 font-jua ">Let's Get In<span>Touch.</span></h1>
+            <p class="font-Oswald text-4xl md:text-5xl">Lets bring your <span class="text-[#ffc30f] font-jua">ideas</span> to life.</p>
+            <div class="p-1 md:p-5 w-full md:3/5 rounded-md ml-auto md:ml-0">
+            <form class="flex justify-center items-center flex-col">
+                <input class="p-5 w-full md:w-4/5 rounded-md m-2"type="text" name="yourname" id="yname" placeholder="Your Name.">
+                <input class="p-5  w-full md:w-4/5 rounded-md m-2" type="email" name="youremail" id="yemail" placeholder="Your Email." required><br>
+                <textarea class="p-5 w-full md:w-4/5 rounded-md m-2 h-32" name="Your message" id="ymsg" placeholder="Your Message" cols="30" rows="5"></textarea><br>
+                <button class="inline-block bg-[#001d30] text-[#ffc30d] py-2 px-5 rounded-full">Submit</button>
             </form></div>
             
         
     </section>
         <!-- footer section -->
-        <footer>
-            <img src="img/logo.png" alt="logo">
-            <p>&#169 2022 scodingden. All right Reserved</p>
+        <footer class="flex  pt-0.5 pr-5 pb-0.5 pl-0.5 bg-[#ffc30f] text-center">
+            <img class="w-12"src="img/logo.png" alt="logo">
+            <p class="text-center pt-2">&#169 2022 scodingden. All right Reserved</p>
             <!-- <a href="https://www.instagram.com/coding_den/">instagram</a> -->
             <!-- <a href="https://www.linkedin.com/in/syed-azeemuddin-4948901a1/">Linkedin</a> -->
         </footer>
